@@ -1,18 +1,19 @@
-### Todo Application API Documentation ###
+# Todo Application API Documentation 
 ## Base URL
 http://localhost:3005
 
-### Endpoints
+## Endpoints
 ## User Registration
 URL: /register
 Method: POST
 Request Body:
   Content-Type: application/json
-#  Body:{
+##  Body:
+{
     "username": "exampleUser",
     "password": "examplePassword"
-  }
-# Response:
+}
+## Response:
   Status Code: 201 Created
   Content :{
     "message": "User created"
@@ -21,13 +22,13 @@ Request Body:
 ## User Login
 URL: /login
 Method: POST
-# Request Body:
+## Request Body:
   Content-Type: application/json
   Body:{
     "username": "exampleUser",
     "password": "examplePassword"
   }
-# Response:
+## Response:
   Status Code: 200 OK
   Content:{
     "message": "Login successful",
@@ -36,32 +37,32 @@ Method: POST
       "username": "exampleUser"
     }
   }
-# Cookies:
+## Cookies:
   Name: token
   Content: JWT token
 
 ## Create a Todo
 URL: /todo
 Method: POST
-# Request Body:
+## Request Body:
   Content-Type: application/json
   Body:{
   "description": "Buy groceries",
   "status": "Pending"
 }
-# Response:
+## Response:
   Status Code: 201 Created
   Content:{
   "message": "Todo created"
 }
-# Cookies:
+## Cookies:
   Name: token
   Content: JWT token (required)
 
 ## Get All Todos
 URL: /getAllTodos
 Method: GET
-# Response:
+## Response:
   Status Code: 200 OK
   Content:[
   {
@@ -77,14 +78,14 @@ Method: GET
     "status": "Completed"
   }
 ]
-# Cookies:
+## Cookies:
   Name: token
   Content: JWT token (required)
 
-### Delete a Todo
+## Delete a Todo
 URL: /todo/{id}
 Method: DELETE
-# URL Parameters:
+### URL Parameters:
  id: The ID of the todo to be deleted
 # Response:
   Status Code: 200 OK
@@ -92,45 +93,45 @@ Method: DELETE
   "message": "Todo deleted successfully"
 }
 
-### Update a Todo
+## Update a Todo
 URL: /todo/{id}
 Method: PUT
-# URL Parameters:
+## URL Parameters:
   id: The ID of the todo to be updated
   
-# Request Body:
+## Request Body:
   Content-Type: application/json
   Body:{
   "description": "Buy groceries and cook dinner",
   "status": "Ongoing"
 }
-# Response:
+## Response:
   Status Code: 200 OK
   Content:{
   "message": "Todo updated successfully"
 }
-# Cookies:
+## Cookies:
   Name: token
   Content: JWT token (required)
 
 
-### Get User Profile
+## Get User Profile
 URL: /profile
 Method: GET
-# Response:
+## Response:
   Status Code: 200 OK
   Content:{
     "id": 1,
     "username": "exampleUser"
   }
-# Cookies:
+## Cookies:
   Name: token
   Content: JWT token (required)
 
-### Get All Users
+## Get All Users
 URL: /users
 Method: GET
-# Response:
+## Response:
   Status Code: 200 OK
   Content:
   [
@@ -144,7 +145,7 @@ Method: GET
     }
   ]
 
-### Deployment ###
+# Deployment #
 
 Frontend deployment is done in # Netlify and backend Deployment is done on # Render
 
