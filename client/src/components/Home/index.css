@@ -1,0 +1,91 @@
+/* Basic styling for the form container */
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:50px
+}
+
+/* Styling for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Adds spacing between form rows */
+}
+.status{
+  color:white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.status-pending {
+  background-color: rgb(252, 49, 49);
+}
+
+.status-completed {
+  background-color: rgb(107, 245, 107);
+}
+
+.status-ongoing {
+  background-color: skyblue;
+}
+
+/* Styling for the form controls to be in a single row */
+.form-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  /* Adds spacing between form elements in the row */
+}
+
+/* Styling for individual form controls */
+.form-control {
+  flex: 1;
+  /* Allows input and select to expand to fill the available space */
+}
+
+.form-control input,
+.form-control select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for the submit button */
+button {
+  background-color: #6c757d;
+  /* Green */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+button:hover {
+  background-color: #5a6268 ;
+}
+.todo-items-con{
+  font-size: 25px;
+}
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px
+}
