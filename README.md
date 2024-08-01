@@ -148,4 +148,6 @@ Method: GET
 # Deployment #
 
 Frontend deployment is done in # Netlify and backend Deployment is done on # Render
+### Run the client with the command npm start and 
+### myapi with the command nodemon app.js
 
